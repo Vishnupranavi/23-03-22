@@ -1,0 +1,74 @@
+<html>
+<script>
+const a=['dom','values','kom'];
+console.log(a);
+document.write(a);
+document.write("<br>");
+document.write(a.length);
+document.write("<br>");
+document.write(a[0],a[1]);
+document.write("<br>");
+a[0]="pranav";
+document.write(a);
+document.write("<br>");
+// indexof
+document.write(a.indexOf('values'));
+document.write("<br>");
+a.push("priya");
+document.write(a);
+document.write("<br>");
+// finding new length
+const newlen=a.push("brinas");
+document.write(a);
+document.write("<br>");
+document.write(newlen);
+document.write("<br>");
+document.write(a.length);
+a.unshift("aniru");//adding to first
+document.write(a);
+a[0]="arthi";
+document.write(a);
+document.write("<br>");
+a.pop();
+document.write("<br>");
+document.write(a);
+const c=a.pop();//returns the item that is removed
+document.write("<br>");
+document.write(c);
+document.write("<br>");
+a.shift();//removes first item
+// multidimensional array
+const b=[0,1,[4,5,6]];
+b[2][2];
+document.write("<br>");
+document.write(b);
+//splice();
+const arr=["joth","ragav","karthic","arun"];
+const index=arr.indexOf("ragav");
+if(index!==-1){
+    arr.splice(index,2);
+}
+document.write(arr);
+// arrow functionss
+const materials = [
+  'Hydrogen',
+  'Helium',
+  'Lithium',
+  'Beryllium'
+];
+
+console.log(materials.map(material => material.length));\
+// for-of
+
+const iterable = [10, 20, 30];
+
+for (let value of iterable) {
+  value += 1;
+  console.log(value);
+// typed array
+  const iterable = new Uint8Array([0x00, 0xff]);
+
+for (const value of iterable) {
+  console.log(value);
+</script>
+</html>
